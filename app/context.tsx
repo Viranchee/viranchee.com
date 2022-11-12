@@ -1,4 +1,3 @@
-// context.tsx
 import React, { createContext } from 'react'
 
 export interface ServerStyleContextData {
