@@ -30,4 +30,4 @@ Technologies I like to work with: LLVM MLIR Rust Swift
 - Set future goals and work on them
 - Build web apps and put them here
 - Take notes using my blog?
-
+- Maybe use Cloudflare Images and Stream, and build my social networking site?
