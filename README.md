@@ -1,22 +1,33 @@
-# Welcome to Remix!
+# 👋 Hi there
 
-- [Remix Docs](https://remix.run/docs)
+My name is Viranchee. I am a Grad Student at NC State University
+My focus areas are: Compilers, Operating Systems, Microprocessor Architecture
+Technologies I like to work with: LLVM MLIR Rust Swift
 
-## Development
+## Tools and Technologies I am confident at:
+- Swift, C++, C, Objective C, Python, Bash
+- High Quality Software Development
+- Object Oriented, Compositional, Protocol Oriented Programming
+- Functional Programming
+- OS Development
+- Compiler passes
+- LLVM Development
+- Microprocessor Architecture Development
 
-You will be utilizing Wrangler for local development to emulate the Cloudflare runtime. This is already wired up in your package.json as the `dev` script:
+## Things I plan to explore:
+- MLIR
+- Operating Systems Development
+- AI/ML
+- Performance Monitoring
+- Kubernetes
+- eBPF
+- Istio, cilium, envoy, graphql
 
-```sh
-# start the remix dev server and wrangler
-npm run dev
-```
 
-Open up [http://127.0.0.1:8788](http://127.0.0.1:8788) and you should be ready to go!
+## What I want to do with this Website:
+- Sell myself to potential employers
+- Showcase my past work
+- Set future goals and work on them
+- Build web apps and put them here
+- Take notes using my blog?
 
-## Deployment
-
-Cloudflare Pages are currently only deployable through their Git provider integrations.
-
-If you don't already have an account, then [create a Cloudflare account here](https://dash.cloudflare.com/sign-up/pages) and after verifying your email address with Cloudflare, go to your dashboard and follow the [Cloudflare Pages deployment guide](https://developers.cloudflare.com/pages/framework-guides/deploy-anything).
-
-Configure the "Build command" should be set to `npm run build`, and the "Build output directory" should be set to `public`.
