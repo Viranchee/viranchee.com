@@ -8,6 +8,7 @@ specifiers:
   '@emotion/react': ^11
   '@emotion/server': ^11
   '@emotion/styled': ^11
+  '@esbuild-plugins/node-globals-polyfill': ^0.1.1
   '@remix-run/cloudflare': ^1.7.5
   '@remix-run/cloudflare-pages': ^1.7.5
   '@remix-run/dev': ^1.7.5
@@ -21,6 +22,7 @@ specifiers:
   npm-run-all: ^4.1.5
   react: ^18
   react-dom: ^18
+  remix-esbuild-override: ^3.0.4
   typescript: ^4.8.4
   wrangler: ^2.2.1
 
@@ -41,12 +43,14 @@ dependencies:
 devDependencies:
   '@babel/core': 7.20.2
   '@cloudflare/workers-types': 3.18.0
+  '@esbuild-plugins/node-globals-polyfill': 0.1.1
   '@remix-run/dev': 1.7.5_biqbaboplfbrettd7655fr4n2y
   '@remix-run/eslint-config': 1.7.5_u5s2ztivgin3yy4srvdhm3tgpm
   '@types/react': 18.0.25
   '@types/react-dom': 18.0.8
   eslint: 8.27.0
   npm-run-all: 4.1.5
+  remix-esbuild-override: 3.0.4_@remix-run+dev@1.7.5
   typescript: 4.8.4
   wrangler: 2.2.1
 
@@ -2534,6 +2538,12 @@ packages:
   /@emotion/weak-memoize/0.3.0:
     resolution: {integrity: sha512-AHPmaAx+RYfZz0eYu6Gviiagpmiyw98ySSlQvCUhVGDRtDFe4DBS0x1bSjdF3gqUDYOczB+yYvBTtEylYSdRhg==}
     dev: false
+
+  /@esbuild-plugins/node-globals-polyfill/0.1.1:
+    resolution: {integrity: sha512-MR0oAA+mlnJWrt1RQVQ+4VYuRJW/P2YmRTv1AsplObyvuBMnPHiizUF95HHYiSsMGLhyGtWufaq2XQg6+iurBg==}
+    peerDependencies:
+      esbuild: '*'
+    dev: true
 
   /@esbuild-plugins/node-globals-polyfill/0.1.1_esbuild@0.14.51:
     resolution: {integrity: sha512-MR0oAA+mlnJWrt1RQVQ+4VYuRJW/P2YmRTv1AsplObyvuBMnPHiizUF95HHYiSsMGLhyGtWufaq2XQg6+iurBg==}
@@ -8294,6 +8304,15 @@ packages:
       '@types/mdast': 3.0.10
       mdast-util-to-hast: 11.3.0
       unified: 10.1.2
+    dev: true
+
+  /remix-esbuild-override/3.0.4_@remix-run+dev@1.7.5:
+    resolution: {integrity: sha512-nIK9DcPo+bo2G2l8a779KdJhOQ6fs7evWpMVDiEZmKd/rvDRf//5Ygcavrxa4W7hLcJzIXcwh+A3o7QimaJgVQ==}
+    hasBin: true
+    peerDependencies:
+      '@remix-run/dev': '>=1.2.0'
+    dependencies:
+      '@remix-run/dev': 1.7.5_biqbaboplfbrettd7655fr4n2y
     dev: true
 
   /repeat-element/1.1.4:
