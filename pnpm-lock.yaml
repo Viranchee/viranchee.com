@@ -22,6 +22,7 @@ specifiers:
   npm-run-all: ^4.1.5
   react: ^18
   react-dom: ^18
+  remix: ^1.7.5
   remix-esbuild-override: ^3.0.4
   typescript: ^4.8.4
   wrangler: ^2.2.1
@@ -39,11 +40,12 @@ dependencies:
   framer-motion: 6.5.1_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  remix: 1.7.5
 
 devDependencies:
   '@babel/core': 7.20.2
   '@cloudflare/workers-types': 3.18.0
-  '@esbuild-plugins/node-globals-polyfill': 0.1.1
+  '@esbuild-plugins/node-globals-polyfill': 0.1.1_esbuild@0.14.51
   '@remix-run/dev': 1.7.5_biqbaboplfbrettd7655fr4n2y
   '@remix-run/eslint-config': 1.7.5_u5s2ztivgin3yy4srvdhm3tgpm
   '@types/react': 18.0.25
@@ -2538,12 +2540,6 @@ packages:
   /@emotion/weak-memoize/0.3.0:
     resolution: {integrity: sha512-AHPmaAx+RYfZz0eYu6Gviiagpmiyw98ySSlQvCUhVGDRtDFe4DBS0x1bSjdF3gqUDYOczB+yYvBTtEylYSdRhg==}
     dev: false
-
-  /@esbuild-plugins/node-globals-polyfill/0.1.1:
-    resolution: {integrity: sha512-MR0oAA+mlnJWrt1RQVQ+4VYuRJW/P2YmRTv1AsplObyvuBMnPHiizUF95HHYiSsMGLhyGtWufaq2XQg6+iurBg==}
-    peerDependencies:
-      esbuild: '*'
-    dev: true
 
   /@esbuild-plugins/node-globals-polyfill/0.1.1_esbuild@0.14.51:
     resolution: {integrity: sha512-MR0oAA+mlnJWrt1RQVQ+4VYuRJW/P2YmRTv1AsplObyvuBMnPHiizUF95HHYiSsMGLhyGtWufaq2XQg6+iurBg==}
@@ -8314,6 +8310,11 @@ packages:
     dependencies:
       '@remix-run/dev': 1.7.5_biqbaboplfbrettd7655fr4n2y
     dev: true
+
+  /remix/1.7.5:
+    resolution: {integrity: sha512-AxUIjx91jiC0SyIVBvfyIdjTQ+sjkYrAe1GN1FunCmn+mOsaZ7bP6SR2TI5kab+8D5R3ebLZbqFRN7uRKfc13A==}
+    engines: {node: '>=14'}
+    dev: false
 
   /repeat-element/1.1.4:
     resolution: {integrity: sha512-LFiNfRcSu7KK3evMyYOuCzv3L10TW7yC1G2/+StMjK8Y6Vqd2MG7r/Qjw4ghtuCOjFvlnms/iMmLqpvW/ES/WQ==}
