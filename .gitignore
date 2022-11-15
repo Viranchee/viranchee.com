@@ -6,3 +6,4 @@ node_modules
 /public/build
 .env
 pnpm-lock.yaml
+.DS_Store

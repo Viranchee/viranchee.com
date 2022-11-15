@@ -10,7 +10,8 @@
     "postinstall": "remix-esbuild-override"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.3.7",
+    "@chakra-ui/icons": "^2.0.12",
+    "@chakra-ui/react": "^2.4.1",
     "@emotion/cache": "^11.10.5",
     "@emotion/react": "^11",
     "@emotion/server": "^11",
@@ -19,9 +20,10 @@
     "@remix-run/cloudflare-pages": "^1.7.5",
     "@remix-run/react": "^1.7.5",
     "cross-env": "^7.0.3",
-    "framer-motion": "^6",
+    "framer-motion": "^7.6.6",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^4.6.0",
     "remix": "^1.7.5"
   },
   "devDependencies": {
