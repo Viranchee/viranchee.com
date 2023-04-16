@@ -35,9 +35,16 @@ export default function Index() {
   return (
     <Box fontFamily="Helvetica" lineHeight={1.4} fontWeight="hairline">
       <Box w='100vw' h='100vh' bgGradient='linear(to-l, #7928CA, #FF0080)' opacity={50}>
-        <Box w='100%' h='100%' display='flex' justifyContent='right' alignItems='center'>
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          h="100%"
+          w="100%"
+        >
           {description}
         </Box>
+        
       </Box>
     </Box>
   );
