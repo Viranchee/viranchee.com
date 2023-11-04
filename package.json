@@ -20,7 +20,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "1",
+    "@cloudflare/next-on-pages": "1.7.2",
     "eslint-plugin-next-on-pages": "^1.7.2",
     "vercel": "^32.5.0",
     "wrangler": "^3.15.0"
