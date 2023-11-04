@@ -20,3 +20,7 @@
 
 - JS Diagram Tool [mermaid](https://mermaid-js.github.io/). Useful for representing design diagrams
 - [prismjs](https://prismjs.com/) for code highlighting
+
+# Dev Links:
+
+- https://new-framework.viranchee-com.pages.dev/
