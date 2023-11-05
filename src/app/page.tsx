@@ -1,3 +1,9 @@
-import Home from "~/pages/Home";
+import { Box } from "@chakra-ui/react";
 
-export default Home;
+export default function Home() {
+  return (
+    <Box>
+      <h1>Hi Chakra</h1>
+    </Box>
+  );
+}
