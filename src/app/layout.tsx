@@ -1,5 +1,6 @@
 import { Metadata, Viewport } from "next";
 import { Providers } from "./providers";
+import Layout from "~/lib/layout";
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -22,7 +23,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Layout>{children}</Layout>
+        </Providers>
       </body>
     </html>
   );
