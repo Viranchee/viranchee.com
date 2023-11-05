@@ -7,10 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "pages:build": "pnpm next-on-pages",
-    "pages:deploy": "pnpm pages:build && wrangler pages deploy .vercel/output/static",
-    "pages:watch": "pnpm next-on-pages --watch",
-    "pages:dev": "pnpm wrangler pages dev .vercel/output/static --compatibility-date=2023-10-30 --compatibility-flag=nodejs_compat"
+    "pages:build": "npx next telemetry disable && pnpm next-on-pages",
+    "pages:deploy": "npx next telemetry disable && pnpm pages:build && wrangler pages deploy .vercel/output/static",
+    "pages:watch": "npx next telemetry disable && pnpm next-on-pages --watch",
+    "pages:dev": "npx next telemetry disable && pnpm wrangler pages dev .vercel/output/static --compatibility-date=2023-10-30 --compatibility-flag=nodejs_compat"
   },
   "dependencies": {
     "@chakra-ui/next-js": "^2.1.5",
