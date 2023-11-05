@@ -9,12 +9,11 @@ type RootLayoutProps = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#FFFFFF",
 };
-const APP_NAME = "nextarter-chakra";
+const APP_NAME = "Homepage | Viranchee";
 
 export const metadata: Metadata = {
-  title: { default: APP_NAME, template: "%s | nextarter-chakra" },
+  title: { default: APP_NAME, template: "%s | Homepage | Viranchee" },
   description: "Next.js + chakra-ui + TypeScript template",
   applicationName: APP_NAME,
 };
