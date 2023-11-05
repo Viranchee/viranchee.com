@@ -1,12 +1,25 @@
 {
-  "name": "my-next-app",
+  "name": "website",
   "version": "0.1.0",
   "private": true,
+  "author": "viranchee",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "build:turbo": "turbo run build",
+    "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "lint:fix": "eslint src --fix && pnpm format",
+    "type-check": "tsc --noEmit",
+    "check:turbo": "npx turbo lint type-check",
+    "test:e2e": "playwright test",
+    "format": "prettier --write src",
+    "up-interactive": "pnpm up -i",
+    "up-latest": "pnpm up-interactive -L",
+    "release": "cross-env HUSKY=0 standard-version",
+    "push-release": "git push --follow-tags origin main",
+    "prepare": "husky install",
     "pages:build": "pnpm next-on-pages",
     "pages:deploy": "pnpm pages:build && wrangler pages deploy .vercel/output/static",
     "pages:watch": "pnpm next-on-pages --watch",
@@ -19,19 +32,26 @@
     "@emotion/styled": "^11.11.0",
     "framer-motion": "^10.16.4",
     "next": "14.0.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "next-pwa": "^5.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "1.7.2",
     "@types/node": "^20.8.10",
-    "@types/react": "18.2.34",
     "@types/react-dom": "18.2.14",
-    "eslint": "8.53.0",
-    "eslint-config-next": "14.0.1",
+    "@types/react": "^18.2.34",
+    "eslint-config-next": "^14.0.1",
     "eslint-plugin-next-on-pages": "^1.7.2",
-    "typescript": "5.2.2",
+    "eslint": "^8.53.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
     "vercel": "^32.5.0",
     "wrangler": "^3.15.0"
+  },
+  "engines": {
+    "node": ">=16.x.x",
+    "pnpm": ">=8"
   }
 }
