@@ -2,12 +2,12 @@ import type { Metadata, Viewport } from "next";
 
 import Providers from "~/app/providers";
 import Layout from "~/lib/layout";
-
+export const runtime = "edge";
 type RootLayoutProps = {
   children: React.ReactNode;
 };
 
-const APP_NAME = "nextarter-chakra";
+const APP_NAME = "Viranchee's Personal Website";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
