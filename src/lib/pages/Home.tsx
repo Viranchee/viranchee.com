@@ -36,7 +36,7 @@ const linkStack = (
 export default function Home() {
   return (
     <VStack spacing={5}>
-      <h1>Hi I'm Viranchee Lotia!</h1>
+      <h1>Hi, I\'m Viranchee Lotia!</h1>
       <p>I love working on ML Compilers, Systems, Performance Modelling.</p>
       <p>I am skilled at iOS and Embedded development.</p>
       {linkStack}
