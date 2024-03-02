@@ -5,11 +5,9 @@ import {
   AiFillPhone,
   AiTwotoneMail,
 } from "react-icons/ai";
-import { Icon, VStack } from "@chakra-ui/react";
-import { VStack, HStack, Link as ChakraLink } from "@chakra-ui/react";
+import { Icon, VStack, HStack, Link as ChakraLink } from "@chakra-ui/react";
 
-const resumeLink =
-  "https://media-cdn.viranchee.com/cf-viranchee-com/production/media/document-6daf6dcc3ebe8da754bb1c07140772d3.pdf";
+const resumeLink = "/resume.pdf";
 const githubLink = "https://www.github.com/viranchee";
 const linkedinLink = "https://www.linkedin.com/in/viranchee";
 const email = "hey@viranchee.com";
@@ -38,7 +36,7 @@ const linkStack = (
 export default function Home() {
   return (
     <VStack spacing={5}>
-      <h1>Hi I'm Viranchee Lotia</h1>
+      <h1>Hi I'm Viranchee Lotia!</h1>
       <p>I love working on ML Compilers, Systems, Performance Modelling.</p>
       <p>I am skilled at iOS and Embedded development.</p>
       {linkStack}
