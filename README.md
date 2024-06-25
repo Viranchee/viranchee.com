@@ -1,26 +1,47 @@
-# 👋 Hi there
+# Astro Starter Kit: Minimal
 
-# Goals with this website:
+```sh
+npm create astro@latest -- --template minimal
+```
 
-- Structure into reading 2 hours every day
-- Make it cheap to track and write blogs
-- Pursue different avenues
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
+[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
-# Ideas
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-- Github Issues as blog posts. Allows for editing and comments.
-- Articles read tracker
-- Separate the frontend from the data. Data resides mostly in Github Issues and Github Projects
-- Use https://www.joshwcomeau.com/ 's website as a way to display the blog posts and websites
-- I am not sure which framework to use.
-- There would be certain components which I will be sharing across the whole web design space.
-- How about I go vanilla JS and CSS for the first iteration and then move to a framework?
+## 🚀 Project Structure
 
-### Helpful stuff
+Inside of your Astro project, you'll see the following folders and files:
 
-- JS Diagram Tool [mermaid](https://mermaid-js.github.io/). Useful for representing design diagrams
-- [prismjs](https://prismjs.com/) for code highlighting
+```text
+/
+├── public/
+├── src/
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
 
-# Dev Links:
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-- https://new-framework.viranchee-com.pages.dev/
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

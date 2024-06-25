@@ -1,36 +1,10 @@
 {
+  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
+    "types": [
+      "@cloudflare/workers-types/2023-07-01"
     ],
-    "baseUrl": "src",
-    "paths": {
-      "~/*": ["./*"]
-    }
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "src",
-    "commitlint.config.js",
-    ".next/types/**/*.ts"
-  ],
-  "forceConsistentCasingInFileNames": true,
-  "exclude": ["node_modules"]
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }
