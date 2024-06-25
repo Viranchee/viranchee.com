@@ -6,7 +6,7 @@ author: 'Viranchee Lotia'
 image:
     url: 'https://rclone.org/img/logo_on_light__horizontal_color.svg'
     alt: 'Rclone logo'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["rclone", "files"]
 ---
 # Tips on using Rclone
 
@@ -40,3 +40,6 @@ rclone mount server: /Volumes/server
 ```
 
 ### RAM file system
+
+Idea, not yet implemented.
+Use FS with RAM backend to download & consume youtube videos.

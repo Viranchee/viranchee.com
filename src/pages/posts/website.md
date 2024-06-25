@@ -1,9 +1,9 @@
 ---
-title: 'Website idea'
+heading: 'Website idea'
 pubDate: 2024-06-26
 description: 'Deciding in the sea of Webframeworks'
 author: 'Viranchee Lotia'
-tags: ["astro", "blogging", "learning in public"]
+tags: ["tech-stack", "architecture"]
 ---
 
 # Web Stack: Astro + Hono + Fluent2
