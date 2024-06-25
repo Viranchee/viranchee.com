@@ -1,5 +1,21 @@
 ---
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
+import "../styles/global.css";
 
+const pageTitle = "About Me";
+const identity = {
+  name: "Viranchee",
+  role: "Compiler Engineer",
+  location: "India",
+  email: "hire@viranchee.com",
+  skills: ["Compilers", "Systems", "MLIR", "XLA", "LLVM", "vLLM", "Pytorch"],
+};
+
+const happy = true;
+const finished = true;
+const goal = 3;
+const skillColor = "navy";
 ---
 
 <html lang="en">
@@ -8,15 +24,32 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>About Me</title>
+    <title>{pageTitle}</title>
   </head>
+  <style define:vars={{ skillColor }}>
+    h1 {
+      color: purple;
+      font-size: 4rem;
+    }
+    .skill {
+      color: var(--skillColor);
+      font-weight: bold;
+    }
+  </style>
   <body>
-    <a href="/">Go back to the main page</a>
-    <a href="/about">About Me</a>
-    <a href="/blog">Blog</a>
-    <h1>Hi👋🏼, I'm Viranchee</h1>
+    <Navigation />
+    <h1>Hi👋🏼, I'm {identity.name}</h1>
     <h2>I love working on Compilers and Systems</h2>
     <p>This is the about page</p>
-    <!-- Link back to main page -->
+    <p>
+      You can reach me at{" "}
+      <a href={`mailto:${identity.email}`}>{identity.email}</a>
+    </p>
+    <p>My skills are:</p>
+    <ul>
+      {identity.skills.map((skill) => <li class="skill">{skill}</li>)}
+    </ul>
+    {finished && <p>I finished the About page</p>}
+    <Footer />
   </body>
 </html>

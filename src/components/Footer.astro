@@ -1,0 +1,14 @@
+---
+import Social from "./Social.astro";
+const socials = [
+  ["github", "viranchee"],
+  ["linkedin", "viranchee"],
+];
+---
+
+<footer>
+  <p>
+    <Social platform={socials[0][0]} username={socials[0][1]} />
+    <Social platform={socials[1][0]} username={socials[1][1]} />
+  </p>
+</footer>

@@ -1,5 +1,6 @@
 ---
-
+import Footer from "../components/Footer.astro";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <html lang="en">
@@ -11,10 +12,13 @@
     <title>Viranchee Lotia</title>
   </head>
   <body>
-    <a href="/">Main</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
+    <Navigation />
     <h1>Hi👋🏼, I'm Viranchee</h1>
     <p>This is blog</p>
+    <ul>
+      <li><a href="/posts/rclone">Rclone</a></li>
+      <li><a href="/posts/website">Website</a></li>
+    </ul>
+    <Footer />
   </body>
 </html>
