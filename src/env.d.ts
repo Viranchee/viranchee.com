@@ -4,8 +4,7 @@ type Runtime = import("@astrojs/cloudflare").Runtime<Env>;
 
 type KVNamespace = import("@cloudflare/workers-types").KVNamespace;
 type ENV = {
-  // replace `MY_KV` with your KV namespace
-  MY_KV: KVNamespace;
+  KV_VWEB: KVNamespace;
 };
 
 // use a default runtime configuration (advanced mode).
