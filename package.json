@@ -16,14 +16,14 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@astrojs/cloudflare": "^11.0.0",
-    "@astrojs/react": "^3.6.0",
     "@astrojs/check": "^0.7.0",
+    "@astrojs/cloudflare": "^11.0.1",
+    "@astrojs/react": "^3.6.0",
     "@cloudflare/workers-types": "^4.20240620.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
-    "astro": "^4.11.1",
-    "typescript": "^5.5.2",
-    "wrangler": "^3.61.0"
+    "astro": "^4.11.5",
+    "typescript": "^5.5.3",
+    "wrangler": "^3.63.1"
   }
 }
