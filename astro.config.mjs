@@ -1,13 +1,15 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-
 import cloudflare from "@astrojs/cloudflare";
+import react from "@astrojs/react";
+
+import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.viranchee.com',
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), react(), tailwind()],
   output: "hybrid",
   adapter: cloudflare({
     platformProxy: {
