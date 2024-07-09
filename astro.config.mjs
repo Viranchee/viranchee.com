@@ -8,7 +8,7 @@ import cloudflare from "@astrojs/cloudflare";
 export default defineConfig({
   site: 'https://www.viranchee.com',
   integrations: [mdx(), sitemap()],
-  output: "hybrid",
+  output: "static",
   adapter: cloudflare({
     platformProxy: {
       enabled: true
